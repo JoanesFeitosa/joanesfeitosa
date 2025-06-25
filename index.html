@@ -26,7 +26,7 @@
     }
     .container {
       background: rgba(24,24,27,0.95);
-      max-width: 540px;
+      max-width: 840px;
       width: 100%;
       margin: 32px auto;
       border-radius: 18px;
@@ -57,10 +57,20 @@
       margin: 0 0 20px 0;
     }
     .bio {
+      max-width: 80%;
       color: var(--fg);
       font-size: 1em;
-      text-align: center;
+      text-align: left;
       margin-bottom: 24px;
+      border: 1px solid var(--muted);
+      border-radius: 6px;
+      padding: 16px 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .bio img {
+      margin-top: -70px;
     }
     .social {
       display: flex;
@@ -81,27 +91,41 @@
       margin-bottom: 22px;
     }
     .section-title {
-      font-size: 1.1em;
+      font-size: 1.875rem;
+      line-height: 2.25rem;
       font-weight: 700;
-      color: var(--accent);
-      margin-bottom: 8px;
+      color: #fff;
+      margin: 1rem 0;
       letter-spacing: 0.03em;
+      text-align: center;
     }
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
     }
+    .cor-texto li {
+      color: #d5d5d5;
+    }
     li {
       margin-bottom: 10px;
       color: var(--fg);
     }
     .job-title {
-      font-weight: 700;
+      font-weight: 600;
+      font-size: 1.25rem;
+      line-height: 1.75rem;
     }
     .job-company {
-      color: var(--muted);
-      font-size: 0.97em;
+      border: 1px solid var(--muted);
+      border-radius: .375rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 1rem;
+      color: #d7d7e3;
+      padding: .25rem .75rem;
+      margin: .25rem 0;
+      display:inline-block;
     }
     .edu-title {
       font-weight: 700;
@@ -110,8 +134,34 @@
       color: var(--muted);
       font-size: 0.97em;
     }
-    .teste {
-
+    .experience-items {
+      border-left: 4px solid rgb(59, 130, 246);
+      padding-left: 1.5rem;
+      margin: 2rem 0;
+    }
+    .links-exp {
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .links-exp:hover {
+      text-decoration: underline;
+    }
+    .border-color {
+      border-color: #34d399;
+    }
+    .education-item {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 1.5rem 0;
+    }
+    .img-edu {
+      width: 5.5rem;
+      height: 5.5rem;
+    }
+    img {
+      max-width: 100%;
     }
     @media (max-width: 600px) {
       .container {
@@ -126,41 +176,64 @@
 </head>
 <body>
   <div class="container">
-    <img src="https://avatars.githubusercontent.com/u/217657326?v=4" alt="Sua foto" class="avatar">
-    <h1>Joanes Feitosa</h1>
-    <h2>Product Owner | Associate | Analista de Produtos | Edtech</h2>
-    <div class="bio">
-      <li>Experiente no desenvolvimento de produtos digitais e especialista em produtos educacionais, como ambiente virtual de aprendizagem, cursos, eventos presenciais, workshops e mentorias. 
-      Coordenei o desenvolvimento da plataforma de aprendizagem, utilizando metodologias ágeis e envolvendo o time em todas as etapas, o que resultou em um produto que gerou um aumento significativo no engajamento, coleta de dados, vendas e redução de churn.
-      Minhas maiores qualificações são: priorização de backlog, comunicação e mediação de equipe multidisciplinar, desenvolvimento de roadmap, analise e interpretação de dados dos usuários para identificação de oportunidades de melhoria na jornada e orientação de time para tomada de decisões de produto baseadas em evidências concretas.
-      Estou focado em evoluir na área de produtos como Product Owner ou Associate Product Manager.</li><br>
-    </div>
-    <div class="social">
-      <a href="mailto:joanesfeitosa.arq@gmail.com" title="E-mail"><i class='bx bx-envelope'></i></a>
-      <a href="https://www.linkedin.com/in/joanesfeitosa" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
-      <a href="https://github.com/JoanesFeitosa" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
-    </div>
+    <section class="bio">
+      <img src="https://avatars.githubusercontent.com/u/217657326?v=4" alt="Sua foto" class="avatar">
+      <h1>Joanes Feitosa</h1>
+      <h2>Product Owner | Associate | Analista de Produtos | Edtech</h2>
+      <h2 class="section-title">Sobre mim</h2>
+      <ul class="cor-texto">
+        <li>Experiente no desenvolvimento de produtos digitais e especialista em produtos educacionais, como ambiente virtual de aprendizagem, cursos, eventos presenciais, workshops e mentorias.
+          <li>Coordenei o desenvolvimento da plataforma de aprendizagem, utilizando metodologias ágeis e envolvendo o time em todas as etapas, o que resultou em um produto que gerou um aumento significativo no engajamento, coleta de dados, vendas e redução de churn.</li>
+          <li>Minhas maiores qualificações são: priorização de backlog, comunicação e mediação de equipe multidisciplinar, desenvolvimento de roadmap, analise e interpretação de dados dos usuários para identificação de oportunidades de melhoria na jornada e orientação de time para tomada de decisões de produto baseadas em evidências concretas.</li>
+          <li>Estou focado em evoluir na área de produtos como Product Owner ou Associate Product Manager.</li>
+      </ul>
+    </section>
+
     <section>
       <div class="section-title">Experiência</div>
       <ul>
-        <li>
-          <span class="job-title">Product Owner</span> <span class="job-company">Otus Educação</span> (2023 - 2025)<br>
-          <li>Product Owner: Coordenei o squad responsável pelo desenvolvimento da plataforma de aprendizagem. Mapeando e priorizando no backlog os requisitos que estivessem alinhados com a estratégia da empresa e o sucesso do usuário. Essa nova plataforma de aprendizagem gerou um aumento significativo no engajamento dos alunos, na coleta de dados e nº de vendas, além de ter sido um elemento importante para redução de churn.</li> 
-          <li>UX Research: Analisei a jornada dos alunos e em momentos estratégicos apliquei pesquisas de satisfação que resultaram no aumento de +50% nas respostas e nos ofereceram importantes insights para melhorias no produto.</li>
-          <li>Curadoria técnica: Reformulei o escopo do principal curso e a partir dele formatei outros que atraíram novos públicos. Os novos cursos serviram em uma estratégia de upsell, corss sell e downsell, e isso resultou em um aumento das métricas de vendas.</li>
-          <li>Curadoria técnica: Desenvolvi materiais didáticos e eventos da comunidade através da análise de dados de uso e feedback dos usuários, resultando em um aumento de 25% no engajamento dos alunos;</li>
+        <li class="experience-items">
+          <span class="job-title">Product Owner</span>
+          <div>
+            <span class="job-company">2023 - 2025</span>
+          </div>
+          <ul class="cor-texto">
+            <li>Product Owner: Coordenei o squad responsável pelo desenvolvimento da plataforma de aprendizagem. Mapeando e priorizando no backlog os requisitos que estivessem alinhados com a estratégia da empresa e o sucesso do usuário. Essa nova plataforma de aprendizagem gerou um aumento significativo no engajamento dos alunos, na coleta de dados e nº de vendas, além de ter sido um elemento importante para redução de churn.</li>
+            <li>UX Research: Analisei a jornada dos alunos e em momentos estratégicos apliquei pesquisas de satisfação que resultaram no aumento de +50% nas respostas e nos ofereceram importantes insights para melhorias no produto.</li>
+            <li>Curadoria técnica: Reformulei o escopo do principal curso e a partir dele formatei outros que atraíram novos públicos. Os novos cursos serviram em uma estratégia de upsell, corss sell e downsell, e isso resultou em um aumento das métricas de vendas.</li>
+            <li>Curadoria técnica: Desenvolvi materiais didáticos e eventos da comunidade através da análise de dados de uso e feedback dos usuários, resultando em um aumento de 25% no engajamento dos alunos;</li>
+          </ul>
+          <div>
+            <a class="links-exp" href="https://otusengenharia.com/">https://otusengenharia.com/</a>
+          </div>
         </li>
-        <li>
-          <span class="job-title">Assistente de Projetos</span> <span class="job-company">Otus Engenharia</span> (2022 - 2023)<br>
-          <li>Organização e padronização de documentos de projetos;</li>
-          <li>Atualização de cronogramas de projeto;</li>
-          <li>Analisei, organizei e padronizei documentos de projetos utilizando a metodologia BIM e metodologias ágeis, o que resultou na redução de retrabalho e desperdício nos projetos.</li>
+        <li class="experience-items border-color">
+          <span class="job-title">Assistente de Projetos</span>
+          <div>
+            <span class="job-company">2022 - 2023</span>
+          </div>
+          <ul class="cor-texto">
+            <li>Organização e padronização de documentos de projetos;</li>
+            <li>Atualização de cronogramas de projeto;</li>
+            <li>Analisei, organizei e padronizei documentos de projetos utilizando a metodologia BIM e metodologias ágeis, o que resultou na redução de retrabalho e desperdício nos projetos.</li>
+          </ul>
+          <div>
+            <a class="links-exp" href="https://otusengenharia.com/">https://otusengenharia.com/</a>
+          </div>
         </li>
-        <li>
-          <span class="job-title">Arquiteto</span> <span class="job-company">Construtora Novatech</span> (2019 - 2022)<br>
-          <li>Gestão, coordenação, desenvolvimento e compatibilização de projetos residenciais unifamiliares utilizando a metodologia BIM e metodologias ágeis como base.</li>
-          <li>Elaboração de Orçamentos de Obra e gestão de cronogramas</li>
-          <li>Liderança de equipe de execução de obras de reforma</li>
+        <li class="experience-items">
+          <span class="job-title">Arquiteto</span>
+          <div>
+            <span class="job-company">2019 - 2022</span>
+          </div>
+          <ul class="cor-texto">
+            <li>Gestão, coordenação, desenvolvimento e compatibilização de projetos residenciais unifamiliares utilizando a metodologia BIM e metodologias ágeis como base.</li>
+            <li>Elaboração de Orçamentos de Obra e gestão de cronogramas</li>
+            <li>Liderança de equipe de execução de obras de reforma</li>
+          </ul>
+          <div>
+            <span class="links-exp">NovaTec</span>
+          </div>
         </li>
       </ul>
     </section>
@@ -168,7 +241,20 @@
       <div class="section-title">Educação</div>
       <ul>
         <li>
-          <span class="edu-title">Arquitetura e Urbanismo</span> <span class="edu-institution">Universidade Tiradentes - SE</span> (2014 - 2018)
+          <div class="education-item">
+            <div class="img-edu">
+              <img src="https://images.seeklogo.com/logo-png/21/2/universidade-tiradentes-logo-png_seeklogo-213594.png">
+            </div>
+            <div>
+              <span class="job-title">Universidade Tiradentes - SE — Arquitetura e Urbanismo</span>
+              <div>
+                <span class="job-company">2014 - 2018</span>
+              </div>
+              <p class="cor-texto">
+                Texto da Universidade aqui
+              </p>
+            </div>
+          </div>
         </li>
       </ul>
     </section>
@@ -192,6 +278,16 @@
         <li>Gamificação</li>
       </ul>
     </section>
+    <footer>
+      <div class="footer-content">
+        <div class="social">
+          <a href="mailto:joanesfeitosa.arq@gmail.com?subject=Contato%20sobre%20o%20currículo&body=Olá%2C%20Joanes.%20Tudo%20bem%3F%20Vi%20seu%20currículo%20e%20gostei%20muito%20do%20seu%20perfil.%20Estou%20entrando%20em%20contato%20para%20marcar%20uma%20conversa." title="E-mail"><i class='bx bx-envelope'></i></a>
+          <a href="https://www.linkedin.com/in/joanesfeitosa" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+          <a href="https://github.com/JoanesFeitosa" target="_blank" title="GitHub"><i class='bx bxl-github'></i></a>
+          <a href="https://wa.me/557999206957?text=Olá%2C%20Joanes.%20Tudo%20bem%3F%20Vi%20seu%20currículo%20e%20gostei%20muito%20do%20seu%20perfil.%20Estou%20entrando%20em%20contato%20para%20marcar%20uma%20conversa." target="_blank" title="WhatsApp"><i class='bx bxl-whatsapp'></i></a>
+        </div>
+      </div>
+    </footer>
   </div>
 </body>
 </html>
