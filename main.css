@@ -326,6 +326,7 @@ img {
     border: 1px solid var(--muted);
     border-radius: 1rem;
     padding: 0.5rem;
+    color: rgb(59, 130, 246);
 }
 ion-icon[name="caret-forward"] {
     margin-left: 4px;
