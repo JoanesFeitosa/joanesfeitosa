@@ -81,17 +81,22 @@ h2 {
 }
 .social {
     display: flex;
-    gap: 18px;
-    margin-bottom: 24px;
+    gap: 2rem;
+    justify-content: center;
 }
 .social a {
-    color: var(--accent);
-    font-size: 1.5em;
     transition: color 0.2s;
     text-decoration: none;
+    font-weight: 300;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
 }
 .social a:hover {
-    color: #fff;
+    color: var(--accent);
+}
+.social i {
+
 }
 section {
     width: 100%;
@@ -360,6 +365,29 @@ ion-icon[name="caret-forward"] {
 .role {
     opacity: 0.7;
     margin-bottom: .25rem;
+}
+.footer-content {
+    background: rgb(43 43 49 / 73%);
+    text-align: center;
+    padding: 3rem 1.5rem;
+    border: 1px solid var(--muted);
+    border-radius: .75rem;
+    max-width: 42rem;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.footer-content p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    padding: 0 1rem;
+}
+.separate-bar {
+    border-bottom: 1px solid var(--muted);
+    width: 90%;
+    margin: 0 auto;
 }
 @media (max-width: 600px) {
     .container {
