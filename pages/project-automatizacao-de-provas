@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Joanes Feitosa - Currículo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Ícones sociais via Boxicons CDN -->
+    <link href="../main.css" rel="stylesheet" />
+</head>
+<body>
+<main class="container-project">
+    <div class="main-img-project">
+        <img src="../images/JOANES-PROTÓTIPO-LOCALIZA%20BIKE-tela%202.png">
+    </div>
+    <div class="about-project">
+        <div class="card-presentation">
+            <h2 class="card-presentation-title">Automatização de Provas Online</h2>
+            <div class="card-info">
+                <div class="card-info-item">Produt Owner</div>
+                <div class="card-info-item">Ano: 2024</div>
+            </div>
+            <div class="separate-bar"></div>
+            <div class="card-description">Sistema de identificação de alunos que precisam ser convidados para realizar uma prova de certificação online, desenvolvido para reduzir a necessidade de operação manual.</div>
+        </div>
+        <div class="knowledges">
+            <div class="k-info">
+                <div class="k-info-title">
+                    <ion-icon name="search"></ion-icon>
+                    <h2 class="">Desafio</h2>
+                </div>
+                <div class="k-description">Projetar um sistema de tagueamento automatizado dos alunos que já estavam na base e dos que futuramente iriam entrar.</div>
+            </div>
+            <div class="k-info">
+                <div class="k-info-title">
+                    <i class='bx  bx-brain'  ></i>
+                    <h2 class="">Soluções</h2>
+                </div>
+                <div class="k-description">Definir tags para os módulos obrigatórios que os alunos precisavam concluir para poder realizar a prova, desenvolver sistemas de automações que “tagueassem” os alunos com essas tags dos módulos à medida que progredissem nos cursos.</div>
+            </div>
+            <div class="k-info">
+                <div class="k-info-title">
+                    <i class='bx  bx-bar-chart'  ></i>
+                    <h2 class="">Resultado</h2>
+                </div>
+                <div class="k-description">Conseguimos reduzir a quantidade de horas de trabalho da equipe de atendimento em 30% para enviar lembretes e comunicados para os alunos fazerem as provas.</div>
+            </div>
+        </div>
+        <div class="learnings">
+            <div class="key-learning-icon"></div>
+            <div class="learn-text">
+                <h3>Aprenizado-chave</h3>
+                <p>Ao automatizar e documentar processos repetitivos do atendimento, percebi que liberamos tempo para focar no que realmente importa: resolver demandas complexas e melhorar a experiência do aluno de forma mais ágil e personalizada.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-content">
+        <h2 class="section-title">Vamos nos conectar?</h2>
+        <p>Estou ansioso para continuar falando um pouco mais sobre mim com você. Então fique à vontade para entrar em contato através das redes sociais abaixo. Te vejo lá! </p>
+        <div class="separate-bar"></div>
+        <div class="social">
+            <a href="https://wa.me/557999206957?text=Olá%2C%20Joanes.%20Tudo%20bem%3F%20Vi%20seu%20currículo%20e%20gostei%20muito%20do%20seu%20perfil.%20Estou%20entrando%20em%20contato%20para%20marcar%20uma%20conversa." target="_blank" title="WhatsApp"><i class='bx bxl-whatsapp'></i><span>WhatsApp</span></a>
+            <a href="mailto:joanesfeitosa.arq@gmail.com" title="E-mail"><i class='bx bx-envelope'></i><span>E-mail</span> </a>
+            <a href="https://www.linkedin.com/in/joanesfeitosa" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i><span>LinkedIn</span></a>
+        </div>
+    </footer>
+</main>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
