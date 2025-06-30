@@ -529,12 +529,12 @@ ion-icon[name="arrow-back-outline"] {
 .back-btn {
     display: none;
     padding: 10px 20px;
-    background-color: #29292e;
+    background-color: #19191ccc;
     color: white;
-    border: 1px solid transparent;
+    border: 1px solid #cbcbcb;
     border-radius: .75rem;
     cursor: pointer;
-    position: absolute;
+    position: fixed;
     z-index: 10;
     top: 1rem;
     left: 5rem;
