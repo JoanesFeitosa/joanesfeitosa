@@ -368,6 +368,9 @@ img {height: 100%;width: 100%;}
 ion-icon[name="caret-forward"] {
     margin-left: 4px;
 }
+ion-icon[name="arrow-back-outline"] {
+
+}
 
 .testimonials-list{
     border: 1px solid var(--muted);
@@ -440,6 +443,7 @@ ion-icon[name="caret-forward"] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .main-img-project > img {
     opacity: 0.7;
@@ -515,7 +519,6 @@ ion-icon[name="caret-forward"] {
     gap: .5rem;
     align-items: center;
 }
-
 .k-info-title h2 {
     font-size: 1.125rem;
     font-weight: 500;
@@ -523,16 +526,20 @@ ion-icon[name="caret-forward"] {
     margin: 0;
     color: #fff;
 }
-
 .back-btn {
     display: none;
     padding: 10px 20px;
-    background-color: #3498db;
+    background-color: #29292e;
     color: white;
-    border: none;
-    border-radius: 5px;
+    border: 1px solid transparent;
+    border-radius: .75rem;
     cursor: pointer;
-    margin-top: 20px;
+    position: absolute;
+    z-index: 10;
+    top: 1rem;
+    left: 5rem;
+    gap: .5rem;
+    transition: background-color 0.3s ease-in-out;
 }
 .back-btn:hover {
     background-color: #2980b9;
@@ -583,6 +590,9 @@ ion-icon[name="caret-forward"] {
     .footer-content {
         padding: 3rem 1rem;
     }
+    .back-btn {
+
+    }
 }
 
 @media (max-width: 756px) {
@@ -608,6 +618,9 @@ ion-icon[name="caret-forward"] {
     }
     .about-project {
         padding: 0 3rem;
+    }
+    .back-btn {
+        left: 3rem;
     }
 }
 
@@ -648,5 +661,8 @@ ion-icon[name="caret-forward"] {
     }
     .footer-content {
         gap: .5rem;
+    }
+    .back-btn {
+        left: 1rem;
     }
 }
