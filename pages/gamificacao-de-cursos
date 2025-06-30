@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Joanes Feitosa - Currículo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Ícones sociais via Boxicons CDN -->
+    <link href="../main.css" rel="stylesheet" />
+</head>
+<body>
+<main class="container-project">
+    <div class="main-img-project">
+        <img src="../images/JOANES-PROTÓTIPO-LOCALIZA%20BIKE-tela%202.png">
+    </div>
+    <div class="about-project">
+        <div class="card-presentation">
+            <h2 class="card-presentation-title">Gamificação de Cursos</h2>
+            <div class="card-info">
+                <div class="card-info-item">Produt Owner</div>
+                <div class="card-info-item">Ano: 2023</div>
+            </div>
+            <div class="separate-bar"></div>
+            <div class="card-description">Criei e implementei um projeto de gamificação para um curso online com aulas gravadas e encontros ao vivo, com o objetivo de aumentar o engajamento dos alunos durante a jornada de aprendizagem.</div>
+        </div>
+        <div class="knowledges">
+            <div class="k-info">
+                <div class="k-info-title">
+                    <ion-icon name="search"></ion-icon>
+                    <h2 class="">Desafio</h2>
+                </div>
+                <div class="k-description">Poucos alunos assistiam às aulas gravadas, participavam dos encontros ao vivo ou respondiam aos feedbacks. Precisávamos motivá-los e obter dados para melhorar a experiência do curso ainda em andamento.</div>
+            </div>
+            <div class="k-info">
+                <div class="k-info-title">
+                    <i class='bx  bx-brain'  ></i>
+                    <h2 class="">Soluções</h2>
+                </div>
+                <div class="k-description">Criei um sistema de pontos baseado em critérios estratégicos, como participação em aulas ao vivo, conclusão de conteúdos e resposta a formulários. Ofereci prêmios atrativos como eventos, livros e kits personalizados.</div>
+            </div>
+            <div class="k-info">
+                <div class="k-info-title">
+                    <i class='bx  bx-bar-chart'  ></i>
+                    <h2 class="">Resultado</h2>
+                </div>
+                <div class="k-description">A gamificação aumentou a participação nos encontros, nas respostas aos formulários e na conclusão de conteúdos. Alunos se engajaram mais e demonstraram interesse real nas premiações e na jornada de aprendizado.</div>
+            </div>
+        </div>
+        <div class="learnings">
+            <div class="key-learning-icon"></div>
+            <div class="learn-text">
+                <h3>Aprenizado-chave</h3>
+                <p>Percebi que gamificação funciona quando é simples, transparente e oferece recompensas alinhadas ao desejo real dos alunos. A pontuação estratégica por critério foi essencial para guiar o comportamento que queríamos.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="footer-content">
+        <h2 class="section-title">Vamos nos conectar?</h2>
+        <p>Estou ansioso para continuar falando um pouco mais sobre projetos com você. Então fique à vontade para me chamar através dos contatos abaixo. Te vejo lá!</p>
+        <div class="separate-bar"></div>
+        <div class="social">
+            <a href="https://wa.me/557999206957?text=Olá%2C%20Joanes.%20Tudo%20bem%3F%20Vi%20seu%20currículo%20e%20gostei%20muito%20do%20seu%20perfil.%20Estou%20entrando%20em%20contato%20para%20marcar%20uma%20conversa." target="_blank" title="WhatsApp"><i class='bx bxl-whatsapp'></i><span>WhatsApp</span></a>
+            <a href="mailto:joanesfeitosa.arq@gmail.com" title="E-mail"><i class='bx bx-envelope'></i><span>E-mail</span> </a>
+            <a href="https://www.linkedin.com/in/joanesfeitosa" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin'></i><span>LinkedIn</span></a>
+        </div>
+    </footer>
+</main>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
