@@ -429,95 +429,6 @@ ion-icon[name="caret-forward"] {
 }
 
 
-@media (max-width: 1000px) {
-    .container {
-        padding: 4rem 1rem;
-        margin: 0;
-        border-radius: 0;
-    }
-    .bio {
-        max-width: 80%;
-    }
-    .all-projects{
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-        gap: 2rem;
-    }
-    .skills > div {
-        width: 47%;
-    }
-    .education {
-        border: 1px solid var(--muted);
-        border-radius: 6px;
-        width: 90%;
-        padding: 1rem 3rem;
-    }
-    .education-item {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-        margin: 1.5rem 0;
-    }
-    .education-item > div:nth-child(2) {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-    }
-}
-
-@media (max-width: 756px) {
-
-    .bio {
-        max-width: 90%;
-    }
-    .education {
-        width: 100%;
-        padding: 1rem;
-    }
-    .education-item {
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-        margin: 1.5rem 0;
-    }
-    .education-item > div:nth-child(2) {
-        width: 80%;
-        display: flex;
-        flex-direction: column;
-        gap: .5rem;
-    }
-}
-
-@media (max-width: 600px) {
-    .bio {
-        max-width: 100%;
-    }
-    h1 { font-size: 1.4em; }
-    h2 { font-size: 1em; }
-    .skills > div {
-        width: 100%;
-    }
-    .all-projects{
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        gap: 2rem;
-    }
-    .skills {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        gap: 2rem;
-    }
-    .courses {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-        gap: 1rem;
-    }
-    .all-testimonials {
-        grid-template-columns: repeat(1, minmax(0, 1fr));
-    }
-}
-
 
 .container-project {
     background: rgba(24,24,27,0.95);
@@ -535,15 +446,10 @@ ion-icon[name="caret-forward"] {
 }
 
 .about-project {
-
     display: flex;
-
     flex-direction: column;
-
     gap: 2rem;
-
     padding: 0 5rem;
-
     margin-top: -5rem;
 }
 
@@ -585,7 +491,6 @@ ion-icon[name="caret-forward"] {
     display: grid;
     gap: 1rem;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-
 }
 
 .k-info {
@@ -617,4 +522,131 @@ ion-icon[name="caret-forward"] {
     line-height: 1.75rem;
     margin: 0;
     color: #fff;
+}
+
+.back-btn {
+    display: none;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.back-btn:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        padding: 4rem 1rem;
+        margin: 0;
+        border-radius: 0;
+    }
+    .container-project {
+        margin: 0;
+        border-radius: 0;
+    }
+    .bio {
+        max-width: 80%;
+    }
+    .all-projects{
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+    .skills > div {
+        width: 47%;
+    }
+    .education {
+        border: 1px solid var(--muted);
+        border-radius: 6px;
+        width: 90%;
+        padding: 1rem 3rem;
+    }
+    .education-item {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin: 1.5rem 0;
+    }
+    .education-item > div:nth-child(2) {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .knowledges {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .footer-content {
+        padding: 3rem 1rem;
+    }
+}
+
+@media (max-width: 756px) {
+    .bio {
+        max-width: 90%;
+    }
+    .education {
+        width: 100%;
+        padding: 1rem;
+    }
+    .education-item {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+        margin: 1.5rem 0;
+    }
+    .education-item > div:nth-child(2) {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .about-project {
+        padding: 0 3rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .bio {
+        max-width: 100%;
+    }
+    h1 { font-size: 1.4em; }
+    h2 { font-size: 1em; }
+    .skills > div {
+        width: 100%;
+    }
+    .all-projects{
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 2rem;
+    }
+    .skills {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .courses {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 1rem;
+    }
+    .all-testimonials {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .knowledges {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+    .about-project {
+        padding: 0 1rem;
+    }
+    .social {
+        gap: .75rem;
+    }
+    .footer-content {
+        gap: .5rem;
+    }
 }
