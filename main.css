@@ -534,7 +534,7 @@ ion-icon[name="arrow-back-outline"] {
     border: 1px solid #cbcbcb;
     border-radius: .75rem;
     cursor: pointer;
-    position: fixed;
+    position: absolute;
     z-index: 10;
     top: 1rem;
     left: 5rem;
